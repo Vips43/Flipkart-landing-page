@@ -1,14 +1,43 @@
 .i{
-  display: block;
+  
   float: left;
   font-size: 1.5rem;
   padding: 5px 10px;
 }
 
 
-
 @media only screen and (min-width:800px){
   .lower{
     display: none;
+  }
+  .section1 .container .img > img{
+  width: 210px;
+  }
+  nav{
+    padding: 5px 0;
+  }
+  #search{
+  display: flex;
+  width: 100%;
+  margin: 0 10px;
+  background: white;
+  border: 1px solid #488BD2;
+  border-radius: 10px;
+  overflow: hidden;
+  }
+  #search > i{
+    color: #488BD2;
+  }
+  #search > input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+  }
+  .none{
+    display: none !important
+  }
+  .no{
+    display: block !important
   }
 }
