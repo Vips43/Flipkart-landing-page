@@ -30,8 +30,22 @@ nav > .upper{
   justify-content: flex-start;
   position: relative;
 }
+/* side menu design*/
 .side-menu{
-  display: none;
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 500px;
+} 
+.side-menu .login{
+  display: flex;
+  li{
+    list-style: none;
+  }
+}
+.side-menu .login li img{
+  height: 20px;
+  border-radius: 50%;
 }
 #search{
   display: none;
