@@ -1,0 +1,17 @@
+.footer{
+  width: 100%;
+  padding: .5rem;
+  background-color: #636371;
+  display: grid;
+  grid-gap: 10px;
+}
+.footer .foot{
+  padding: .2rem;
+  color: #BABABA;
+  font-size: 1.2rem;
+  
+}
+.footer .foot ul{
+  padding: 1rem 0;
+  color: white;
+}
