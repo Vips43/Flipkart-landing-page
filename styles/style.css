@@ -29,21 +29,30 @@ nav > .upper{
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  img{
+    margin-left: 50px;
+  }
+}
+#menubar{
+  position: absolute;
+  left: 0;
 }
 /* side menu design*/
 .side-menu{
   position: absolute;
   background-color: white;
-  display: block;
   width: 400px;
+  overflow: hidden;
+  top: 60px;
   height: 1000px;
-  top: -5px;
-  left: -10px;
-  
+  left: -1000px;
+  transition: left .5s;
+  z-index: 99;
 } 
 .side-menu .login{
   height: 60px;
   display: flex;
+  flex-wrap: nowrap;
   background-color: blue;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +73,9 @@ nav > .upper{
   font-size: x-large;
   padding: .2em;
 }
-
+.display{
+  left: -10px;
+}
 
 
 
@@ -130,6 +141,7 @@ nav > .upper{
   display: flex;
   overflow: hidden;
   border-radius: 10px;
+  z-index: -1;
 }
 .slider .slides > img{
   width: 100%;
@@ -196,7 +208,7 @@ nav > .upper{
   height: fit-content;
   overflow-x: scroll;
   margin: 5px 10px;
-  
+  z-index: -1;
 }
 .section2 > .container{
   display: flex;
