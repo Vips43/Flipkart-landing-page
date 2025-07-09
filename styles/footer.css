@@ -3,7 +3,7 @@
   padding: .5rem;
   background-color: #636371;
   display: grid;
-  grid-gap: 10px;
+  align-content: space-around;
 }
 .footer .foot{
   padding: .2rem;

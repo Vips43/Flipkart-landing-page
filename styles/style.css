@@ -10,6 +10,7 @@ body{
   background: #A3A3A3;
   /* background: white; */
   width: 100vw;
+  /* padding: .5rem; */
 }
 nav{
   background: white;
@@ -262,5 +263,33 @@ nav > .upper{
   span{
     display: block;
     padding-left: 10px;
+  }
+}
+
+.section3{
+  background: white;
+  display: flex;
+  position: relative;
+  margin: 0 .6rem;
+  h3{
+    padding: .5rem;
+    position: absolute;
+  }
+}
+.section3 .innerSection1{
+  margin-top: 2rem;
+  width: 45%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: .2rem;
+}
+.section3 .innerSection1 .box{
+  width: 45%;
+  flex-grow: 1;
+  border: 1px solid #000;
+  img{
+    width: 90%;
   }
 }
