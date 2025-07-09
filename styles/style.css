@@ -76,7 +76,8 @@ nav > .upper{
   li{
     display: block;
     font-size: large;
-    padding: .2em;
+    padding: .5em 0;
+    color: #929292;
   }
 }
 .display{
