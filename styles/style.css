@@ -43,7 +43,7 @@ nav > .upper{
   background-color: white;
   width: 400px;
   overflow: hidden;
-  top: 60px;
+  top: 50px;
   height: 1000px;
   left: -1000px;
   transition: left .5s;
@@ -68,10 +68,13 @@ nav > .upper{
   margin-right: 1rem;
   border-radius: 50%;
 }
-.side-menu ul li{
-  display: block;
-  font-size: x-large;
-  padding: .2em;
+.side-menu ul{
+  padding: .5rem 1rem;
+  li{
+    display: block;
+    font-size: large;
+    padding: .2em;
+  }
 }
 .display{
   left: -10px;
