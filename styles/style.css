@@ -212,6 +212,18 @@ nav > .upper{
   overflow-x: scroll;
   margin: 5px 10px;
   z-index: -1;
+}.section2::-webkit-scrollbar {
+    width: 12px;
+}
+
+.section2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.section2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 .section2 > .container{
   display: flex;
@@ -221,13 +233,15 @@ nav > .upper{
   
 }
 .section2 > .container > .img{
-  height: 85%;
+  height: 97%;
   padding: 5px;
+  margin: 5px;
   background: #E9EBFF;
-  border: 1px solid red;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
   position: relative;
   img{
-    height: 100%;
+    height: 85%;
     margin: 5px;
   }
   span{
