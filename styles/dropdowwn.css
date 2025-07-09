@@ -6,6 +6,13 @@
 }
 
 
+
+
+
+
+
+
+
 @media only screen and (min-width:800px){
   .lower{
     display: none;
@@ -39,5 +46,8 @@
   }
   .no{
     display: block !important
+  }
+  .side-menu{
+    display: block;
   }
 }
