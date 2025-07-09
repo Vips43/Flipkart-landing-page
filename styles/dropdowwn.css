@@ -47,4 +47,7 @@
   .no{
     display: block !important
   }
+  .side-menu{
+    display: none;
+  }
 }
