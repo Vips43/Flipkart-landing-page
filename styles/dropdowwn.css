@@ -65,4 +65,7 @@ html::-webkit-scrollbar-thumb {
   .footer{
     grid-template-columns: repeat(3, 1fr);
   }
+  .section3{
+    grid-template-columns: auto auto;
+  }
 }
