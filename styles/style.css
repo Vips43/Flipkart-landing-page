@@ -302,6 +302,7 @@ nav > .upper{
       height: 95px;
       width: 90%;
       height: fit-content;
+      margin-top: .5rem;
     }
   }
 }
