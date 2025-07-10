@@ -29,6 +29,10 @@ html::-webkit-scrollbar-thumb {
   .lower{
     display: none;
   }
+  .section1 .container{
+    display: flex;
+    flex-wrap: nowrap;
+  }
   .section1 .container .img > img{
   width: 210px;
   }
@@ -67,5 +71,8 @@ html::-webkit-scrollbar-thumb {
   }
   .section3{
     grid-template-columns: auto auto;
+  }
+  .section3 .innerSection1 .box{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
