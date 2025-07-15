@@ -102,7 +102,19 @@ nav > .upper{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  
 }
+.nav-right > i{
+    position: relative;
+}
+
+
+
+
+
+
+
 .location{
   display: flex;
   margin: 10px 0;
