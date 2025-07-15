@@ -39,6 +39,25 @@ html::-webkit-scrollbar-thumb {
   nav{
     padding: 5px 0;
   }
+  .nav-right i > ul{
+    display: none;
+    position: absolute;
+    right: -2px;
+    top: 45px;
+    width: fit-content;
+    background-color: white;
+    li{
+      padding: 10px;
+      white-space: nowrap;
+    }
+  }
+  .nav-right i:hover .nav-right i ul{
+    display: block;
+  }
+  
+  
+  
+  
   #search{
   display: flex;
   width: 100%;
