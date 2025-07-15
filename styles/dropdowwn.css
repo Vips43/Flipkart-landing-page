@@ -60,6 +60,9 @@ html::-webkit-scrollbar-thumb {
   .none{
     display: none !important
   }
+  #menubar{
+    opacity: 0;
+  }
   .no{
     display: block !important
   }
