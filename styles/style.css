@@ -184,7 +184,7 @@ nav > .upper{
   60%{transform: translatex(-300%);}
   75%{transform: translatex(-300%);}
   80%{transform: translatex(-400%);}
-  hu0%{transform: translatex(-400%);}
+  0%{transform: translatex(-400%);}
 }
 
 
