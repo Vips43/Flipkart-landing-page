@@ -184,17 +184,21 @@ nav > .upper{
   60%{transform: translatex(-300%);}
   75%{transform: translatex(-300%);}
   80%{transform: translatex(-400%);}
-  100%{transform: translatex(-400%);}
+  hu0%{transform: translatex(-400%);}
 }
 
 
 .section1{
   width: calc(100% - 20px);
   height: auto;
-  background-color: #69DBFF;
+  /* background-color: #69DBFF; */
   margin: 5px 10px;
   border-radius: 15px;
   padding: 10px 0 10px 0;
+  background-image: url("../sec1-backgrd.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .section1 > .upper{
   display: flex;
