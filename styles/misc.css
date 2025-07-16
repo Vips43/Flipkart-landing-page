@@ -93,6 +93,9 @@ html::-webkit-scrollbar-thumb {
   .section3 .innerSection1 .box{
     grid-template-columns: repeat(2, 1fr);
   }
+  .section3 .innerSection1 .box .box1 img{
+    height: 200px;
+  }
 }
 @media (min-width:1020px){
   .sider{
