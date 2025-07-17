@@ -160,7 +160,7 @@ nav > .upper{
   align-items: center;
 }
 .slides{
-  width: 100%;
+  width: calc(100% * 9);
   height: 100%;
   display: flex;
   overflow: hidden;
