@@ -95,6 +95,7 @@ html::-webkit-scrollbar-thumb {
   }
   .section3 .innerSection1 .box .box1 img{
     height: 200px;
+    object-fit: contain;
   }
 }
 @media (min-width:1020px){
