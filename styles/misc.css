@@ -93,21 +93,8 @@ html::-webkit-scrollbar-thumb {
   .section3 .innerSection1 .box{
     grid-template-columns: repeat(2, 1fr);
   }
-<<<<<<< HEAD:styles/dropdowwn.css
-  .sider{
-    width: calc(100% - 10px);
-    height: 700px;
-    .slides{
-      height: 100%;
-      img{
-        object-fit: contain;
-        
-      }  
-    }
-=======
   .section3 .innerSection1 .box .box1 img{
     height: 200px;
->>>>>>> 723ccf28d6b678998c66bb22097ab952f9c54db8:styles/misc.css
   }
 }
 @media (min-width:1020px){
