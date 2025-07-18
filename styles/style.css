@@ -257,6 +257,7 @@ nav > .upper{
     padding: .2rem .7rem;
     position: sticky;
     left: 0;
+    z-index: 1;
   }
 }
 .section2::-webkit-scrollbar {
@@ -278,6 +279,7 @@ nav > .upper{
   width: fit-content;
   height: 200px;
   background: white;
+  border: 1px solid #000;
   
 }
 .section2 > .container > .img{
