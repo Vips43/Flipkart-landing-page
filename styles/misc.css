@@ -39,6 +39,9 @@ html::-webkit-scrollbar-thumb {
   nav{
     padding: 5px 0;
   }
+  .nav-right{
+    margin-right: 1rem;
+  }
   .nav-right i > ul{
     display: none;
     position: absolute;
@@ -51,7 +54,7 @@ html::-webkit-scrollbar-thumb {
       white-space: nowrap;
     }
   }
-  .nav-right i:hover .nav-right i ul{
+  .nav-right:hover .nav-right i ul{
     display: block;
   }
   #search{
@@ -93,10 +96,10 @@ html::-webkit-scrollbar-thumb {
   .section3 .innerSection1 .box{
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .section3 .innerSection1 .box .box1 img{
+  .section3 .innerSection1 .box .box1 img{
     height: 200px;
     object-fit: contain;
-  } */
+  }
 }
 @media (min-width:1020px){
   /* .sider{
