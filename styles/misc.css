@@ -100,6 +100,27 @@ html::-webkit-scrollbar-thumb {
     height: 200px;
     object-fit: contain;
   }
+  .section4{
+    /* flex-direction: column; */
+  }
+  .section4 .main-1, .section4 .main-2{
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 200px;
+  }
+  .section4 .main-1 .box1, .section4 .main-2 .box1{
+    grid-column: span 3;
+  }
+  .section4 .main-1 .box2, .section4 .main-2 .box2{
+    grid-row: auto;
+  }
+  .section4 .main-1 .box .img-box, .section4 .main-2 .box .img-box{
+    width: 40%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 @media (min-width:1020px){
   /* .sider{
