@@ -58,13 +58,13 @@ html::-webkit-scrollbar-thumb {
     display: block;
   }
   #search{
-  display: flex;
-  width: 100%;
-  margin: 0 10px;
-  background: white;
-  border: 1px solid #488BD2;
-  border-radius: 10px;
-  overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin: 0 10px;
+    background: white;
+    border: 1px solid #488BD2;
+    border-radius: 10px;
+    overflow: hidden;
   }
   #search > i{
     color: #488BD2;
@@ -101,7 +101,7 @@ html::-webkit-scrollbar-thumb {
     object-fit: contain;
   }
   .section4{
-    /* flex-direction: column; */
+
   }
   .section4 .main-1, .section4 .main-2{
     width: 100%;
