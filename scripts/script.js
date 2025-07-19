@@ -31,4 +31,4 @@ const slideShow = ()=>{
   },2000)
 
 } 
-slideShow();
+slideShow

@@ -154,14 +154,14 @@ nav > .upper{
 .slider{
   margin: 5px 5px;
   width: calc(100% - 10px);
-  height: auto;
+  height: calc(fit-content - 60%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slides{
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
