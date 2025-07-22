@@ -58,13 +58,13 @@ html::-webkit-scrollbar-thumb {
     display: block;
   }
   #search{
-  display: flex;
-  width: 100%;
-  margin: 0 10px;
-  background: white;
-  border: 1px solid #488BD2;
-  border-radius: 10px;
-  overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin: 0 10px;
+    background: white;
+    border: 1px solid #488BD2;
+    border-radius: 10px;
+    overflow: hidden;
   }
   #search > i{
     color: #488BD2;
@@ -101,7 +101,7 @@ html::-webkit-scrollbar-thumb {
     object-fit: contain;
   }
   .section4{
-    /* flex-direction: column; */
+
   }
   .section4 .main-1, .section4 .main-2{
     width: 100%;
@@ -131,8 +131,24 @@ html::-webkit-scrollbar-thumb {
   }
 }
 @media (min-width:1020px){
-  .sider{
-    width: 60%;
-    height: 700px;
+  .slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    /* background: antiquewhite; */
+    /* position: relative; */
+  }
+  .slider .slides{
+    /* position: absolute; */
+    width: 35%;
+    height: 100%;
+    /* overflow: hidden; */
+    img{
+      animation: an 20s infinite;
+      width: 100%;
+      height: 100%;
+      
+    }
   }
 }
