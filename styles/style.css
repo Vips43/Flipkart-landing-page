@@ -48,7 +48,7 @@ nav > .upper{
   width: 400px;
   overflow: hidden;
   top: 50px;
-  height: 1000px;
+  height: 100vh;
   left: -1000px;
   z-index: 99;
 } 
@@ -173,7 +173,7 @@ nav > .upper{
   border-radius: 10px;
   border: 5px solid white;
   transition: animation .5s ;
-  animation: a 10s alternate infinite;
+  animation: an 20s alternate infinite;
 }
 
 @keyframes an{
