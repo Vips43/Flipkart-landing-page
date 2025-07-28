@@ -136,14 +136,10 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     height: 250px;
-    /* background: antiquewhite; */
-    /* position: relative; */
   }
   .slider .slides{
-    /* position: absolute; */
     width: 35%;
     height: 100%;
-    /* overflow: hidden; */
     img{
       animation: an 20s infinite;
       width: 100%;

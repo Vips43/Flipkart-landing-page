@@ -348,7 +348,6 @@ nav > .upper{
 
 .section4{
   width: 100%; 
-  /* margin: 10px; */
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -376,6 +375,7 @@ nav > .upper{
 }
 .section4 .main-1 .box, .section4 .main-2 .box{
   background-color: #ffffff;
+  padding: 0 .5rem;
   box-shadow: 1px 1px 2px rgb(92, 77, 77);
   display: flex;
   justify-content: center;
@@ -383,7 +383,11 @@ nav > .upper{
   flex-direction: column;
   gap: 10px;
   p{
+    width: 100%;
+    /* white-space: nowrap; */
     font-size: .8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .section4 .main-1 .box .img-box, .section4 .main-2 .box .img-box{
