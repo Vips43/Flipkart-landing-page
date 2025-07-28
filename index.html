@@ -6,17 +6,19 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="styles/footer.css" type="text/css" media="all" />
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/dropdowwn.css">
+  <link rel="stylesheet" href="styles/misc.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles/all.min.css">
   <title>flipkart.com</title>
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav id="nav">
     <div class="upper">
       <div class="nav-left">
+        <i class="fa-solid fa-bars i" id='menubar' onclick="clickMenu()"></i>
         <i class="fa-solid fa-bars i" id='menubar' onclick="clickMenu()"></i>
         <div class="side-menu">
           <div class="login">
@@ -51,9 +53,16 @@
       </div>
       <div class="nav-right">
         <a href="https://play.google.com/store/apps/details?id=com.flipkart.android"><i class="fa-solid fa-download i" style="color: #000000;"></i></a>
+        <a href="https://play.google.com/store/apps/details?id=com.flipkart.android"><i class="fa-solid fa-download i" style="color: #000000;"></i></a>
         <i class="fa-regular fa-circle-user i" style="color: #000000;"><span>&nbsp;User</span></i>
         <i class="fa-solid fa-cart-shopping i" style="color: #000000;"></i>
         <i class="fa-solid fa-ellipsis-vertical no i"><ul>
+          <li><i class="fa-solid fa-bell"> </i> &nbsp;Notification preference</li>
+          <li><i class="fa-solid fa-headphones"></i> &nbsp;24x7 Customer Care</li>
+          <li><i class="fa-solid fa-chart-line"></i> &nbsp;Advertise</li>
+          <li><i class="fa-solid fa-download"></i> &nbsp;Download App</li>
+        </ul></i>
+        <i class="fa-solid fa-ellipsis-vertical no i" onclick="elips()"><ul id="desk-elips">
           <li><i class="fa-solid fa-bell"> </i> &nbsp;Notification preference</li>
           <li><i class="fa-solid fa-headphones"></i> &nbsp;24x7 Customer Care</li>
           <li><i class="fa-solid fa-chart-line"></i> &nbsp;Advertise</li>
@@ -74,11 +83,16 @@
     </nav>
     <section class="slider">
       <div class="slides">
-        <img  src="Img1.jpg" alt="">
-        <img  src="Img2.jpg" alt="">
-        <img  src="Img3.jpg" alt="">
-        <img  src="Img4.jpg" alt="">
-        <img  src="Img5.jpg" alt="">
+        <img class="slide-img" src="img1.jpg" alt="">
+        <img class="slide-img" src="img2.jpeg" alt="">
+        <img class="slide-img" src="img3.jpeg" alt="">
+        <img class="slide-img" src="img4.jpeg" alt="">
+        <img class="slide-img" src="img5.jpeg" alt="">
+        <img class="slide-img" src="img6.jpeg" alt="">
+        <img class="slide-img" src="img7.jpg" alt="">
+        <img class="slide-img" src="img8.jpeg" alt="">
+        <img class="slide-img" src="img9.jpeg" alt="">
+        <img class="slide-img" src="img9 copy.jpeg" alt="">
       </div>
     </section>
     
@@ -114,7 +128,7 @@
       <div class="container">
         <div class="img">
           <img src="image/panel3/Beardo.jpeg">
-          <span>Breado products</span>
+          <span>Beardo products</span>
         </div>
         <div class="img">
           <img src="image/panel3/Bike.jpg">
@@ -178,33 +192,79 @@
      <section class="innerSection1">
       <h3>Monsoon Special picks</h3>
       <div class="box">
-        <div class="box1">
+        <div class="box1" style="flex-grow: 1;">
           <img src="image/Col1.jpeg" alt="" />
-          <p>Branded Shoes <br><span>Min 70% off</span></p>
+          <p>Colgate MaxFresh<br><span>Min 70% off</span></p>
         </div>
         
         <div class="box1">
           <img src="image/Col2.png" alt="" />
-          <p>Boxers <br><span>Min 70% off</span></p>
+          <p>Colgate Total <br><span>Min 70% off</span></p>
         </div>
         
         <div class="box1">
           <img src="image/Col3.jpeg" alt="" />
-          <p>Flip flops <br><span>Min 70% off</span></p>
+          <p>Colgate Sensitive <br><span>Min 70% off</span></p>
         </div>
         
         <div class="box1">
           <img src="image/col4.jpeg" alt="" />
-          <p>School Bags <br><span>Min 70% off</span></p>
+          <p>Colgate VedShakti <br><span>Min 70% off</span></p>
         </div>
       </section>
       </div>
-
   </section>
-  
-  
-  
-  
+
+  <section class="section4">
+    <main class="main-1">
+      <div class="box1">
+        <h3>Suggested for you</h3>
+      </div>
+      <div class="box box2">
+        <div class="img-box">
+          <img src="./image/section4/hp-pav-i5(1).jpeg" alt="">
+        </div>
+        <p>Hp Pavillion intel core I5... <br><span style="text-decoration: line-through; color: grey;">74,999</span><span style="font-weight: bold;"> ₹58,999</span><span style="color: green;"> 21% off</span></p>
+      </div>
+      <div class="box box3">
+        <div class="img-box">
+          <img src="./image/section4/hp-pav-i5.jpeg" alt="">
+        </div>
+        <p>Hp Pavillion intel core... <br><span style="text-decoration: line-through; color: grey;">87,999 </span><span style="font-weight: bold;">₹66,999 </span><span style="color: green;">2..</span></p>
+      </div>
+      <div class="box box4">
+        <div class="img-box">
+          <img src="./image/section4/hp-pav-ultra5.jpeg" alt="">
+        </div>
+        <p>Hp Pavillion AI PC int... <br><span style="text-decoration: line-through; color: grey;">89,999 </span><span style="font-weight: bold;">₹69,999 </span><span style="color: green;">21...</span></p>
+      </div>
+    </main>
+
+
+    <main class="main-2">
+      <div class="box1">
+        <h3>Recommended items</h3>
+      </div>
+      <div class="box box2">
+        <div class="img-box">
+          <img src="./image/section4/backpack-1.jpeg" alt="">
+        </div>
+        <p>Hp Pavillion intel core I5 processor <br><span style="text-decoration: line-through; color: grey;">74,999</span><span style="font-weight: bold;"> ₹58,999</span><span style="color: green;"> 21% off</span></p>
+      </div>
+      <div class="box box3">
+        <div class="img-box">
+          <img src="./image/section4/backpack.jpeg" alt="">
+        </div>
+        <p>Hp Pavillion intel core <br><span style="text-decoration: line-through; color: grey;">87,999 </span><span style="font-weight: bold;">₹66,999 </span><span style="color: green;">2..</span></p>
+      </div>
+      <div class="box box4">
+        <div class="img-box">
+          <img src="./image/section4/bagpack1.jpeg" alt="">
+        </div>
+        <p>Hp Pavillion AI PC int... <br><span style="text-decoration: line-through; color: grey;">89,999 </span><span style="font-weight: bold;">₹69,999 </span><span style="color: green;">21...</span></p>
+      </div>
+    </main>
+  </section>
   
   
   
@@ -271,6 +331,7 @@
  </footer> 
   
   <script src="scripts/script.js"></script>
+</body> 
 </body> 
 
 </html>

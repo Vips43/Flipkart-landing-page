@@ -1,10 +1,11 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
   transition: all .5s;
   list-style: none;
+  user-select: none;
 }
 body{
   background: #A3A3A3;
@@ -37,6 +38,8 @@ nav > .upper{
 #menubar{
   position: absolute;
   left: 0;
+  opacity: 1;
+  transition: opacity .5s;
   transition: all .5s;
   cursor: pointer;
 }
@@ -47,9 +50,8 @@ nav > .upper{
   width: 400px;
   overflow: hidden;
   top: 50px;
-  height: 1000px;
+  height: 100vh;
   left: -1000px;
-  /* transition: left .5s; */
   z-index: 99;
 } 
 .side-menu .login{
@@ -72,13 +74,18 @@ nav > .upper{
   border-radius: 20px;
 }
 .side-menu ul{
-  padding: .5rem 1rem;
+  /* padding: .5rem 1rem; */
+  height: 100vh;
   li{
     display: block;
     font-size: large;
-    padding: .5em 0;
+    padding: .5em 1em;
     color: #929292;
   }
+}
+.side-menu > ul > li:hover{
+  background: grey;
+  color: white;
 }
 .display{
   left: -10px;
@@ -99,7 +106,19 @@ nav > .upper{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  
 }
+.nav-right > i{
+    position: relative;
+}
+
+
+
+
+
+
+
 .location{
   display: flex;
   margin: 10px 0;
@@ -135,16 +154,16 @@ nav > .upper{
   display: none !important
 }
 .slider{
-  margin: 5px 0;
-  width: 100%;
-  height: 170px;
+  margin: 5px 5px;
+  width: calc(100% - 10px);
+  height: calc(fit-content - 60%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slides{
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
@@ -152,23 +171,35 @@ nav > .upper{
 }
 .slider .slides > img{
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: 5px solid white;
   transition: animation .5s ;
-  animation: an 10s ease-in-out infinite;
+  animation: an 20s alternate infinite;
 }
 
 @keyframes an{
   0%{transform: translatex(0%);}
-  10%{transform: translatex(0%);}
-  20%{transform: translatex(-100%);}
-  30%{transform: translatex(-100%);}
-  40%{transform: translatex(-200%);}
-  50%{transform: translatex(-200%);}
-  60%{transform: translatex(-300%);}
-  70%{transform: translatex(-300%);}
-  80%{transform: translatex(-400%);}
-  100%{transform: translatex(-400%);}
+  5%{transform: translatex(0%);}
+  10%{transform: translatex(-100%);}
+  15%{transform: translatex(-100%);}
+  20%{transform: translatex(-200%);}
+  25%{transform: translatex(-200%);}
+  30%{transform: translatex(-300%);}
+  35%{transform: translatex(-300%);}
+  40%{transform: translatex(-400%);}
+  45%{transform: translatex(-400%);}
+  50%{transform: translatex(-500%);}
+  55%{transform: translatex(-500%);}
+  60%{transform: translatex(-600%);}
+  65%{transform: translatex(-600%);}
+  70%{transform: translatex(-700%);}
+  75%{transform: translatex(-700%);}
+  80%{transform: translatex(-800%);}
+  85%{transform: translatex(-800%);}
+  90%{transform: translatex(-900%);}
+  95%{transform: translatex(-900%);}
+  100%{transform: translatex(-0%);}
 }
 
 
@@ -179,6 +210,9 @@ nav > .upper{
   margin: 5px 10px;
   border-radius: 15px;
   padding: 10px 0 10px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .section1 > .upper{
   display: flex;
@@ -217,15 +251,17 @@ nav > .upper{
   width: 100%;
   height: fit-content;
   overflow-x: scroll;
-  margin: 5px 10px;
+  margin: 5px 0px;
   padding: .5rem 0;
   z-index: -1;
   background-color: white;
-  
   h3{
     position: sticky;
     left:.7rem;
     padding: .2rem .7rem;
+    position: sticky;
+    left: 0;
+    z-index: 1;
   }
 }
 .section2::-webkit-scrollbar {
@@ -247,6 +283,7 @@ nav > .upper{
   width: fit-content;
   height: 200px;
   background: white;
+  border: 1px solid #000;
   
 }
 .section2 > .container > .img{
@@ -269,6 +306,7 @@ nav > .upper{
 
 .section3{
   background: rgb(27, 126, 139);
+  width: 100%;
   display: grid;
   border-radius: 10px;
   gap: 10px;
@@ -278,7 +316,7 @@ nav > .upper{
   margin: .4rem;
   h3{
     grid-column: span4;
-    
+    padding: 5px;
   }
 }
 .section3 .innerSection1 .box, .section3 .innerSection2 .box{
@@ -286,6 +324,7 @@ nav > .upper{
   grid-template-columns: repeat(4, 1fr);
   background-color: #A3A3A3;
   gap: 10px;
+  padding: .1em;
   p{
     font-size: .8rem;
     span{
@@ -298,12 +337,67 @@ nav > .upper{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: white;
+    gap: 10px;
     img{
-      height: 95px;
-      width: 90%;
-      height: fit-content;
+      width: 80%;
+      height: auto;
       margin-top: .5rem;
     }
+  }
+}
+
+
+    /* section 4 design */
+
+.section4{
+  width: 100%; 
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+}
+.section4 .main-1, .section4 .main-2{
+  width: 50%;
+  margin: .5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 1fr 1fr;;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 1rem;
+  h3{
+    padding: .5rem;
+  }
+}
+.section4 .main-1 .box1, .section4 .main-2 .box1{
+  grid-column: span 2;
+  background-color: #ffffff;
+}
+.section4 .main-1 .box2, .section4 .main-2 .box2{
+  grid-row: span 2;
+}
+.section4 .main-1 .box, .section4 .main-2 .box{
+  background-color: #ffffff;
+  padding: 0 .5rem;
+  box-shadow: 1px 1px 2px rgb(92, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  p{
+    width: 100%;
+    /* white-space: nowrap; */
+    font-size: .8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.section4 .main-1 .box .img-box, .section4 .main-2 .box .img-box{
+  width: 80%;
+  img{
+    width: 100%;
+    object-position: center;
   }
 }
