@@ -1,5 +1,5 @@
 
-
+let deskMenu = document.querySelector('#desk-elips')
 let sideMenu = document.querySelector('.side-menu')
 let menuBar = document.querySelector('#menubar')
 let nav = document.querySelector('#nav')
@@ -18,6 +18,9 @@ function clickMenu(){
     nav.style.top = '0px'
     
   }
+}
+function elips() {
+  deskMenu.classList.toggle('ulDisplay')
 }
 
 let slides = document.querySelector('.slides')

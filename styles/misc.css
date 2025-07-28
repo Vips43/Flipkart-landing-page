@@ -42,8 +42,9 @@ html::-webkit-scrollbar-thumb {
   .nav-right{
     margin-right: 1rem;
   }
-  .nav-right i > ul{
-    display: none;
+  .nav-right i > #desk-elips{
+    max-height: 0px;
+    overflow: hidden;
     position: absolute;
     right: -2px;
     top: 45px;
@@ -53,6 +54,9 @@ html::-webkit-scrollbar-thumb {
       padding: 10px;
       white-space: nowrap;
     }
+  }
+  .ulDisplay{
+    max-height: 200px;
   }
   .nav-right:hover .nav-right i ul{
     display: block;
