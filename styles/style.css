@@ -40,8 +40,6 @@ nav > .upper{
   left: 0;
   opacity: 1;
   transition: opacity .5s;
-  transition: all .5s;
-  cursor: pointer;
 }
 /* side menu design*/
 .side-menu{
@@ -154,15 +152,15 @@ nav > .upper{
   display: none !important
 }
 .slider{
-  /* width: calc(100% * 5); */
-  width: 100%;
-  height: 200px;
+  margin: 5px 5px;
+  width: calc(100% - 10px);
+  height: calc(fit-content - 60%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slides{
-  width: calc(100% - 10px);
+  width: 100%;
   height: 80%;
   display: flex;
   overflow: hidden;
@@ -171,7 +169,6 @@ nav > .upper{
 }
 .slider .slides > img{
   width: 100%;
-  object-fit: contain;
   height: 100%;
   border-radius: 10px;
   border: 5px solid white;
@@ -181,18 +178,26 @@ nav > .upper{
 
 @keyframes an{
   0%{transform: translatex(0%);}
-  10%{transform: translatex(0%);}
-  20%{transform: translatex(-100%);}
-  30%{transform: translatex(-100%);}
-  40%{transform: translatex(-200%);}
-  50%{transform: translatex(-200%);}
-  60%{transform: translatex(-300%);}
-  70%{transform: translatex(-300%);}
-  80%{transform: translatex(-400%);}
-  90%{transform: translatex(-400%);}
-  99%{transform: translatex(-500%);}
-  100%{transform: translatex(-500%);}
-  
+  5%{transform: translatex(0%);}
+  10%{transform: translatex(-100%);}
+  15%{transform: translatex(-100%);}
+  20%{transform: translatex(-200%);}
+  25%{transform: translatex(-200%);}
+  30%{transform: translatex(-300%);}
+  35%{transform: translatex(-300%);}
+  40%{transform: translatex(-400%);}
+  45%{transform: translatex(-400%);}
+  50%{transform: translatex(-500%);}
+  55%{transform: translatex(-500%);}
+  60%{transform: translatex(-600%);}
+  65%{transform: translatex(-600%);}
+  70%{transform: translatex(-700%);}
+  75%{transform: translatex(-700%);}
+  80%{transform: translatex(-800%);}
+  85%{transform: translatex(-800%);}
+  90%{transform: translatex(-900%);}
+  95%{transform: translatex(-900%);}
+  100%{transform: translatex(-0%);}
 }
 
 
@@ -249,8 +254,6 @@ nav > .upper{
   z-index: -1;
   background-color: white;
   h3{
-    position: sticky;
-    left:.7rem;
     padding: .2rem .7rem;
     position: sticky;
     left: 0;

@@ -104,6 +104,9 @@ html::-webkit-scrollbar-thumb {
     height: 200px;
     object-fit: contain;
   }
+  .section4{
+
+  }
   .section4 .main-1, .section4 .main-2{
     width: 100%;
     grid-template-columns: auto auto auto;
@@ -131,7 +134,7 @@ html::-webkit-scrollbar-thumb {
     }
   }
 }
-/* @media (min-width:1020px){
+@media (min-width:1020px){
   .slider{
     width: 100%;
     display: flex;
@@ -148,4 +151,4 @@ html::-webkit-scrollbar-thumb {
       
     }
   }
-} */
+}
