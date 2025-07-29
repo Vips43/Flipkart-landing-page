@@ -155,14 +155,14 @@ nav > .upper{
 }
 .slider{
   margin: 5px 5px;
-  width: calc(100% - 10px);
+  width: calc(100% * 5);
   height: calc(fit-content - 60%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slides{
-  width: 100%;
+  width: calc(100% - 10px);
   height: 80%;
   display: flex;
   overflow: hidden;
@@ -180,26 +180,18 @@ nav > .upper{
 
 @keyframes an{
   0%{transform: translatex(0%);}
-  5%{transform: translatex(0%);}
-  10%{transform: translatex(-100%);}
-  15%{transform: translatex(-100%);}
-  20%{transform: translatex(-200%);}
-  25%{transform: translatex(-200%);}
-  30%{transform: translatex(-300%);}
-  35%{transform: translatex(-300%);}
-  40%{transform: translatex(-400%);}
-  45%{transform: translatex(-400%);}
-  50%{transform: translatex(-500%);}
-  55%{transform: translatex(-500%);}
-  60%{transform: translatex(-600%);}
-  65%{transform: translatex(-600%);}
-  70%{transform: translatex(-700%);}
-  75%{transform: translatex(-700%);}
-  80%{transform: translatex(-800%);}
-  85%{transform: translatex(-800%);}
-  90%{transform: translatex(-900%);}
-  95%{transform: translatex(-900%);}
-  100%{transform: translatex(-0%);}
+  10%{transform: translatex(0%);}
+  20%{transform: translatex(-100%);}
+  30%{transform: translatex(-100%);}
+  40%{transform: translatex(-200%);}
+  50%{transform: translatex(-200%);}
+  60%{transform: translatex(-300%);}
+  70%{transform: translatex(-300%);}
+  80%{transform: translatex(-400%);}
+  90%{transform: translatex(-400%);}
+  99%{transform: translatex(-500%);}
+  100%{transform: translatex(-500%);}
+  
 }
 
 

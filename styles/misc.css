@@ -131,7 +131,7 @@ html::-webkit-scrollbar-thumb {
     }
   }
 }
-@media (min-width:1020px){
+/* @media (min-width:1020px){
   .slider{
     width: 100%;
     display: flex;
@@ -148,4 +148,4 @@ html::-webkit-scrollbar-thumb {
       
     }
   }
-}
+} */
