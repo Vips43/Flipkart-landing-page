@@ -40,6 +40,8 @@ nav > .upper{
   left: 0;
   opacity: 1;
   transition: opacity .5s;
+  transition: all .5s;
+  cursor: pointer;
 }
 /* side menu design*/
 .side-menu{
@@ -254,6 +256,8 @@ nav > .upper{
   z-index: -1;
   background-color: white;
   h3{
+    position: sticky;
+    left:.7rem;
     padding: .2rem .7rem;
     position: sticky;
     left: 0;
