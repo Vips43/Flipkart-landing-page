@@ -104,9 +104,6 @@ html::-webkit-scrollbar-thumb {
     height: 200px;
     object-fit: contain;
   }
-  .section4{
-
-  }
   .section4 .main-1, .section4 .main-2{
     width: 100%;
     grid-template-columns: auto auto auto;
