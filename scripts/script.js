@@ -20,7 +20,13 @@ function clickMenu(){
   }
 }
 function elips() {
-  deskMenu.classList.toggle('ulDisplay')
+  if(deskMenu.style.maxHeight == '200px'){
+    deskMenu.style.maxHeight = '0px'
+    deskMenu.style.padding = '0'
+  }else{
+    deskMenu.style.maxHeight = '200px'
+    deskMenu.style.padding = '1rem'
+  }
 }
 
 let slides = document.querySelector('.slides')

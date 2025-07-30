@@ -151,6 +151,9 @@ nav > .upper{
 .no{
   display: none !important
 }
+
+/* flipkart slider */
+
 .slider{
   margin: 5px 5px;
   width: calc(100% - 10px);
@@ -165,7 +168,8 @@ nav > .upper{
   display: flex;
   overflow: hidden;
   border-radius: 10px;
-  z-index: -1;
+  z-index: -1; 
+  aspect-ratio: 16/9;
 }
 .slider .slides > img{
   width: 100%;
@@ -199,7 +203,7 @@ nav > .upper{
   95%{transform: translatex(-900%);}
   100%{transform: translatex(-0%);}
 }
-
+/*  flipkart slider ends*/
 
 .section1{
   width: calc(100% - 20px);
@@ -257,7 +261,7 @@ nav > .upper{
     padding: .2rem .7rem;
     position: sticky;
     left: 0;
-    z-index: 1;
+    z-index: -5;
   }
 }
 .section2::-webkit-scrollbar {

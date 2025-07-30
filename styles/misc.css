@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
     max-height: 0px;
     overflow: hidden;
     position: absolute;
-    right: -2px;
+    right: -20px;
     top: 45px;
     width: fit-content;
     background-color: white;
